@@ -1,0 +1,8 @@
+$ cat .git/info/exclude
+/.settings
+/target
+/*.project
+/*.classpath
+/project/target
+/project/project
+/bin/
