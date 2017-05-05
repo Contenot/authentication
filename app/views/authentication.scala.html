@@ -1,0 +1,62 @@
+@()
+<html>
+<head>
+<link rel="stylesheet" href="@helper.getAsset("css","bootstrap","3.1.1","bootstrap_3.1.1.custom.min.css")">
+<style>
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin input[type="text"], .form-signin input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+</style>
+
+</head>
+<body>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand">@Messages("application.name")</a>
+			</div>
+		</div>
+	</div>
+	<div id="body" class="container">
+
+		<form class="form-signin" method="POST"
+			action="@controllers.routes.Authentication.verification">
+			<h2 class="form-signin-heading">@Messages("signin")</h2>
+			<input type="text" name="login" class="input-block-level"
+				placeholder="@Messages("login")"> <input type="password"
+				name="password" class="input-block-level" placeholder="@Messages("password")">
+			<button class="btn btn-large btn-primary" type="submit">@Messages("connect")</button></br>
+			<!-- <a href="@controllers.routes.Authentication.inscription">@Messages("inscription")</a>-->
+		</form>
+
+	</div>
+</body>
+</html>

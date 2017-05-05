@@ -1,0 +1,13 @@
+GET  / 	controllers.Authentication.authentication()
+GET  /logout 	controllers.Authentication.logOut()
+
+
+GET  /inscription  	controllers.Authentication.inscription()
+
+POST  /verification 	controllers.Authentication.verification()
+
+POST  /inscription  	controllers.Authentication.inscriptionverif()
+
+
+#just for compile main.scala.html
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
