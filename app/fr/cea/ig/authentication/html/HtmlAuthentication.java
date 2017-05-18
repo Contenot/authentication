@@ -169,7 +169,7 @@ public class HtmlAuthentication extends Action.Simple{
             }
 			
 			String  passwordInDB =  a.getUserPassword(user) ;
-			if(passwordInDB !=  null){
+			if((passwordInDB !=  null) && ( a.getUserPassword(user) != null)){
 				return BCrypt.checkpw(password,passwordInDB);
 			}
 		}
