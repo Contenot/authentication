@@ -1,9 +1,6 @@
 package fr.cea.ig.authentication;
 ///Sc jkdfqd//dsqfdqsfdsfdsqfdqfdsq
-///teste kdjqfkdjkqsf
-///Sc jkdfqd//dsqfdqsfdsfdsqfdqfdsq
-///teste kdjqfkdjkqsf
-///Sc jkdfqd//dsqfdqsfdsfdsqfdqfdsq
+
 ///teste kdjqfkdjkqsf
 import fr.cea.ig.authentication.activedirectory.ActiveDirectoryAuthentication;
 import fr.cea.ig.authentication.activedirectory.ActiveDirectoryPlugin;
