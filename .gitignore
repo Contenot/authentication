@@ -1,0 +1,9 @@
+/.gitignore
+/.settings
+/target
+/*.project
+/*.classpath
+/project/target
+/project/project
+/bin/
+/app/controllers/
