@@ -2,3 +2,4 @@
 /conf/
 /project/
 /target/
+curl https://github.com/Contenot/authentication/blob/master/.gitignore >> ~/.config/git/ignore
